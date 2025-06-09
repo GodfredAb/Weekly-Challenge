@@ -1,7 +1,6 @@
 def two_sum(list, target):
     for i in range(len(list)):
-        j = 1;
-        for j in range(len(list)):
+        for j in range(i + 1, len(list)):
             if target - list[i] == list[j]:
                 return i, j
 
